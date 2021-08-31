@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "id": 2,
+      "title": "Second Title",
+      "text": "Second text"
+    },
+    {
+      "id": 3,
+      "title": "Third Title",
+      "text": "Third text"
+    },
+    {
+      "id": 4,
+      "title": "Fourth Title",
+      "text": "Fourth text"
+    },
+    {
+      "id": 5,
+      "title": "Fifth Title",
+      "text": "Fifth text"
+    },
+    {
+      "title": "New Note",
+      "text": "This is a new note",
+      "id": "94f3a73a-a4e4-41f0-8b57-f3c5369b0426"
+    }
+  ]
+}
