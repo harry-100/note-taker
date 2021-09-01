@@ -1,31 +1,6 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "Test Title",
-      "text": "Test text"
-    },
-    {
-      "id": 2,
-      "title": "Second Title",
-      "text": "Second text"
-    },
-    {
-      "id": 3,
-      "title": "Third Title",
-      "text": "Third text"
-    },
-    {
-      "id": 4,
-      "title": "Fourth Title",
-      "text": "Fourth text"
-    },
-    {
-      "id": 5,
-      "title": "Fifth Title",
-      "text": "Fifth text"
-    },
-    {
       "title": "Best Note",
       "text": "this is the best note ever created by me.",
       "id": "e0d9d7be-43be-46d6-9ef0-604d9b8a49b4"
