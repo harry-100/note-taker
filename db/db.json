@@ -26,9 +26,19 @@
       "text": "Fifth text"
     },
     {
+      "title": "Best Note",
+      "text": "this is the best note ever created by me.",
+      "id": "e0d9d7be-43be-46d6-9ef0-604d9b8a49b4"
+    },
+    {
+      "title": "Even Better Note",
+      "text": "this is even better note than the best note created by me.",
+      "id": "a68206eb-d2bc-4239-a314-bcd84cc9914e"
+    },
+    {
       "title": "New Note",
       "text": "This is a new note",
-      "id": "94f3a73a-a4e4-41f0-8b57-f3c5369b0426"
+      "id": "383e57a2-8d6b-4781-9e2a-7f5e9c4e1ebf"
     }
   ]
 }

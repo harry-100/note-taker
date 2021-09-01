@@ -7,10 +7,12 @@ const {v4: uuidv4} = require('uuid');
 const { create } = require('domain');
 const fs = require('fs');
 const path = require('path');
+const { join } = require('path');
 
 // add middleware to parse incoming data
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(express.static('public'));
 
 // Get route for notes
 app.get('/api/notes', (req, res) => {
@@ -19,6 +21,7 @@ app.get('/api/notes', (req, res) => {
 
 function createNewNote(body, notesArray) {
     const note = body;
+    console.log("notes array", notesArray);
     notesArray.push(note);
     fs.writeFileSync(
         path.join(__dirname, '/db/db.json'),
@@ -35,7 +38,30 @@ app.post('/api/notes', (req, res) => {
 });
 
 
+//  DELETE route for notes
+app.delete('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+    let note;
 
+    notes.map((element, index) => {
+      if (element.id == id){
+        note = element
+        notes.splice(index, 1)
+        return res.json(note);
+      } 
+    
+    })
+});
+
+// html route for index.html
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+// html route for notes.html
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/notes.html'));
+});
 
 
 
