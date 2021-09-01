@@ -1,5 +1,4 @@
 const express = require('express');
-const ds = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const { notes } = require('./db/db');
@@ -7,14 +6,15 @@ const {v4: uuidv4} = require('uuid');
 const { create } = require('domain');
 const fs = require('fs');
 const path = require('path');
-const { join } = require('path');
+
 
 // add middleware to parse incoming data
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(express.static('public'));
 
-// Get route for notes
+
+ // Get route for notes
 app.get('/api/notes', (req, res) => {
     res.json(notes);
 })
@@ -51,7 +51,7 @@ app.delete('/api/notes/:id', (req, res) => {
       } 
     
     })
-});
+}); 
 
 // html route for index.html
 app.get('/', (req, res) => {
