@@ -30,4 +30,4 @@ This application is covered under [MIT](
 ![image-2](./public/assets/images/image-2.png)
 
 ## Questions
-If you need more information, please checkout my [github account](https://github.com/harry-100). You can also reach me via [email](mailto:harvinder.shah@gmail.com?subject=team-profile).
+If you need more information, please checkout my [github account](https://github.com/harry-100). You can also reach me via [email](mailto:harvinder.shah@gmail.com?subject=note-taker).
