@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
+
  // Get route for notes
 app.get('/api/notes', (req, res) => {
     res.json(notes);
