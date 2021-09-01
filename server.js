@@ -21,7 +21,6 @@ app.get('/api/notes', (req, res) => {
 
 function createNewNote(body, notesArray) {
     const note = body;
-    console.log("notes array", notesArray);
     notesArray.push(note);
     fs.writeFileSync(
         path.join(__dirname, '/db/db.json'),
@@ -32,6 +31,7 @@ function createNewNote(body, notesArray) {
 
 //  POST route for notes
 app.post('/api/notes', (req, res) => {
+    //  using uuid module to generate random unique id
     req.body.id = uuidv4();
     const note = createNewNote(req.body, notes);
     res.json(note);
